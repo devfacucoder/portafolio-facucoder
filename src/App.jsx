@@ -10,9 +10,9 @@ function App() {
     <div className="bg-gray-900 text-white min-h-screen">
       <section className="flex flex-col w-full gap-2 min-h-screen ">
         <div className="flex w-full flex-col justify-center items-center">
-          <h1>Full Stack Developer</h1>
+          <h1 className="text-4xl">Full Stack Developer</h1>
           <h2 className="text-5xl font-bold text-center">{"</>"}</h2>
-          <h3>Facundo Ferreyra</h3>
+          <h3 className="text-4xl">Facundo Ferreyra</h3>
         </div>
 
         <div className="flex flex-col w-full justify-center items-center">
@@ -38,6 +38,14 @@ function App() {
             soluciones reales y aprendiendo en cada paso.
           </p>
         </div>
+        <div className="w-full flex flex-col justify-center items-center gap-2">
+
+          <button className="bg-white text-black cursor-pointer border-2 border-black p-2 btn-shadow hover:bg-gray-700 transition duration-300">
+            Ver Proyectos
+          </button>
+
+        </div>
+
       </section>
     </div>
   );
