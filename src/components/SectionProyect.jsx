@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "./Card";
+import proyectos from "../../public/proyectos.json"
 function SectionProyect() {
   return (
     <section
@@ -7,15 +8,21 @@ function SectionProyect() {
       id="proyects"
     >
       <h3>My Proyects</h3>
-      <ul className="w-full flex flex-col gap-2">
-        <li className="w-full" >
-          <Card/>
-
-        </li>
-        <li className="w-full" >
-          <Card/>
-
-        </li>
+      <ul className="w-full pl-4 flex flex-col gap-2 list-none">
+        {
+          proyectos.map((proyect) => (
+            <li key={proyect.id} className="w-full " >
+              <Card
+                arrayTech={proyect.arrayTechs}
+                title={proyect.title}
+                description={proyect.description}
+                img={proyect.image}
+                arrayPoints={proyect.arrayPoints}
+              />
+            </li>
+          ))
+        }
+       
       </ul>
     </section>
   );

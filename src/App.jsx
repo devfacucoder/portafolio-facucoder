@@ -18,7 +18,16 @@ function App() {
 
         <div className="flex flex-col w-full justify-center items-center">
           <h3>Technologys</h3>
-          <ListTech />
+          <ListTech
+            techs={[
+              "react",
+              "node",
+              "tailwind",
+              "express",
+              "mongodb",
+              "graphql",
+            ]}
+          />
         </div>
         <div className="w-full flex flex-col justify-center items-center gap-2">
           <h3>Contact</h3>
@@ -40,18 +49,17 @@ function App() {
           </p>
         </div>
         <div className="w-full flex flex-col justify-center items-center gap-2">
-
-          <button onClick={()=>{
-            window.location.href = "#proyects"
-          }} className="bg-white text-black cursor-pointer border-2 border-black p-2 btn-shadow hover:bg-gray-700 transition duration-300">
-            
+          <button
+            onClick={() => {
+              window.location.href = "#proyects";
+            }}
+            className="bg-white text-black cursor-pointer border-2 border-black p-2 btn-shadow hover:bg-gray-700 transition duration-300"
+          >
             Ver Proyectos
           </button>
-
         </div>
-
       </section>
-          <SectionProyect/>
+      <SectionProyect />
     </div>
   );
 }

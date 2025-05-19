@@ -1,0 +1,29 @@
+[
+  {
+    "title": "FM-tienda",
+    "description": "E-commerce de productos de tecnología, con carrito de compras y pasarela de pago.",
+    "image": "./fm-tienda.PNG",
+    "arrayTechs": ["React", "Node.js", "Express", "MongoDB"],
+    "arrayPoints": [
+      "Api-RESTful",
+      "CRUD de Imagenes",
+      "CRUD de usuarios",
+      "Autenticación JWT",
+      "Manejo de errores",
+      "Permisos de administrador"
+    ]
+  },
+  {
+    "title": "Facu-turnos",
+    "description": "Un sistema de gestión de turnos para una facultad, con autenticación y autorización de usuarios.",
+    "image": "./turnos.PNG",
+    "arrayTechs": ["React", "Node.js", "Express", "MongoDB"],
+    "arrayPoints": [
+      "Api-RESTful",
+      "CRUD de usuarios",
+      "Autenticación JWT",
+      "Manejo de errores",
+      "Permisos de administrador"
+    ]
+  }
+]
