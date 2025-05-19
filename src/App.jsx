@@ -5,9 +5,10 @@ import { CiInstagram } from "react-icons/ci";
 
 import "./App.css";
 import ListTech from "./components/ListTech";
+import SectionProyect from "./components/SectionProyect";
 function App() {
   return (
-    <div className="bg-gray-900 text-white min-h-screen">
+    <div className="bg-gray-900 text-white min-h-screen pt-4">
       <section className="flex flex-col w-full gap-2 min-h-screen ">
         <div className="flex w-full flex-col justify-center items-center">
           <h1 className="text-4xl">Full Stack Developer</h1>
@@ -40,13 +41,17 @@ function App() {
         </div>
         <div className="w-full flex flex-col justify-center items-center gap-2">
 
-          <button className="bg-white text-black cursor-pointer border-2 border-black p-2 btn-shadow hover:bg-gray-700 transition duration-300">
+          <button onClick={()=>{
+            window.location.href = "#proyects"
+          }} className="bg-white text-black cursor-pointer border-2 border-black p-2 btn-shadow hover:bg-gray-700 transition duration-300">
+            
             Ver Proyectos
           </button>
 
         </div>
 
       </section>
+          <SectionProyect/>
     </div>
   );
 }
