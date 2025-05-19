@@ -22,6 +22,17 @@ function Card({ arrayTech, title = "titulo", description, img, arrayPoints }) {
           ))}
         </ul>
       </div>
+      <div className="flex flex-wrap gap-2">
+        <button className="bg-white text-black cursor-pointer border-2 border-black p-2 btn-shadow hover:bg-gray-700 transition duration-300">
+          Backend-repo
+        </button>
+        <button className="bg-white text-black cursor-pointer border-2 border-black p-2 btn-shadow hover:bg-gray-700 transition duration-300">
+          frontend-repo
+        </button>
+        <button className="bg-white text-black cursor-pointer border-2 border-black p-2 btn-shadow hover:bg-gray-700 transition duration-300">
+          Page-repo
+        </button>
+      </div>
     </div>
   );
 }

@@ -3,7 +3,7 @@
     "title": "FM-tienda",
     "description": "E-commerce de productos de tecnología, con carrito de compras y pasarela de pago.",
     "image": "./fm-tienda.PNG",
-    "arrayTechs": ["React", "Node.js", "Express", "MongoDB"],
+    "arrayTechs": ["React", "Nodejs", "Express", "MongoDB","tailwind"],
     "arrayPoints": [
       "Api-RESTful",
       "CRUD de Imagenes",
@@ -17,7 +17,7 @@
     "title": "Facu-turnos",
     "description": "Un sistema de gestión de turnos para una facultad, con autenticación y autorización de usuarios.",
     "image": "./turnos.PNG",
-    "arrayTechs": ["React", "Node.js", "Express", "MongoDB"],
+    "arrayTechs": ["React", "Nodejs", "Express", "MongoDB","tailwind"],
     "arrayPoints": [
       "Api-RESTful",
       "CRUD de usuarios",

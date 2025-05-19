@@ -8,7 +8,7 @@ import { DiMongodb } from "react-icons/di";
 import { GrGraphQl } from "react-icons/gr";
 
 const ICONS = {
-  node: <FaNodeJs fontSize={"25px"} color="#0b0" />,
+  nodejs: <FaNodeJs fontSize={"25px"} color="#0b0" />,
   react: <FaReact fontSize={"25px"} color="#0bf" />,
   tailwind: <RiTailwindCssFill fontSize={"25px"} color="#0bf" />,
   express: <SiExpress fontSize={"25px"} color="#0ff" />,
@@ -18,9 +18,9 @@ const ICONS = {
 
 function ListTech({ techs = [] }) {
   return (
-    <ul className="w-full flex flex-wrap justify-center">
+    <ul className="w-full flex flex-wrap gap-2 justify-center">
       {techs.map((tech) => (
-        <li key={tech} className="flex p-2 items-center">
+        <li key={tech} className="flex py-2  items-center">
           {ICONS[tech.toLowerCase()]}
         </li>
       ))}
