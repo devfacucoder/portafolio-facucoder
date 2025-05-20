@@ -6,6 +6,7 @@ import { CiInstagram } from "react-icons/ci";
 import "./App.css";
 import ListTech from "./components/ListTech";
 import SectionProyect from "./components/SectionProyect";
+import SelectIdioma from "./components/SelectIdioma";
 function App() {
   return (
     <div className="bg-gray-900 text-white min-h-screen pt-4">
@@ -39,6 +40,7 @@ function App() {
         </div>
         <div className="w-full flex flex-col justify-center items-center gap-2">
           <h3>About Me</h3>
+         <SelectIdioma/>
           <p className="text-sm leading-relaxed max-w-2xl px-4 text-center">
             Soy Facundo Ferreyra, desarrollador full stack con experiencia
             construyendo aplicaciones web usando React, Node.js, Express,
