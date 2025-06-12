@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "./Card";
-import proyectos from "../assets/proyectos.json"
+import proyectos from "../assets/proyectos.json";
 function SectionProyect() {
   return (
     <section
@@ -8,21 +8,18 @@ function SectionProyect() {
       id="proyects"
     >
       <h3>My Proyects</h3>
-      <ul className="w-full p-4 flex flex-col gap-2 list-none">
-        {
-          proyectos.map((proyect) => (
-            <li key={proyect.id} className="w-full " >
-              <Card
-                arrayTech={proyect.arrayTechs}
-                title={proyect.title}
-                description={proyect.description}
-                img={proyect.image}
-                arrayPoints={proyect.arrayPoints}
-              />
-            </li>
-          ))
-        }
-       
+      <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4 w-full">
+        {proyectos.map((proyect) => (
+          <li key={proyect.id} className="w-full">
+            <Card
+              arrayTech={proyect.arrayTechs}
+              title={proyect.title}
+              description={proyect.description}
+              img={proyect.image}
+              arrayPoints={proyect.arrayPoints}
+            />
+          </li>
+        ))}
       </ul>
     </section>
   );

@@ -11,7 +11,11 @@
       "Autenticación JWT",
       "Manejo de errores",
       "Permisos de administrador"
-    ]
+    ],
+    "linkRepoBack":"",
+    "LinkRepoFront":"",
+    "linkPage":""
+
   },
   {
     "title": "Facu-turnos",
@@ -24,6 +28,41 @@
       "Autenticación JWT",
       "Manejo de errores",
       "Permisos de administrador"
-    ]
+    ],
+     "linkRepoBack":"",
+    "LinkRepoFront":"",
+    "linkPage":""
+  },
+  {
+    "title": "Facu-turnos",
+    "description": "Un sistema de gestión de turnos para una facultad, con autenticación y autorización de usuarios.",
+    "image": "/turnos.PNG",
+    "arrayTechs": ["React", "Nodejs", "Express", "MongoDB","tailwind"],
+    "arrayPoints": [
+      "Api-RESTful",
+      "CRUD de usuarios",
+      "Autenticación JWT",
+      "Manejo de errores",
+      "Permisos de administrador"
+    ],
+     "linkRepoBack":"",
+    "LinkRepoFront":"",
+    "linkPage":""
+  },
+  {
+    "title": "Facu-turnos",
+    "description": "Un sistema de gestión de turnos para una facultad, con autenticación y autorización de usuarios.",
+    "image": "/turnos.PNG",
+    "arrayTechs": ["React", "Nodejs", "Express", "MongoDB","tailwind"],
+    "arrayPoints": [
+      "Api-RESTful",
+      "CRUD de usuarios",
+      "Autenticación JWT",
+      "Manejo de errores",
+      "Permisos de administrador"
+    ],
+     "linkRepoBack":"",
+    "LinkRepoFront":"",
+    "linkPage":""
   }
 ]

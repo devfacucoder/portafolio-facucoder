@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-
+import React, { useState,useContext } from "react";
+import {Idioma} from "../App"
 function SelectIdioma() {
   const [viewList, setViewList] = useState(false);
-  const [idioma, setIdoma] = useState("es");
+  const [idioma,setIdoma] = useContext(Idioma)
   return (
     <div className="flex gap-2 relative w-24">
       <button
