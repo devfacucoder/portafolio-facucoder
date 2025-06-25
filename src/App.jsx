@@ -2,16 +2,16 @@ import React, { createContext, useState } from "react";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 import { CiInstagram } from "react-icons/ci";
-import texto from "./assets/texto.json"
+import texto from "./assets/texto.json";
 import "./App.css";
 import ListTech from "./components/ListTech";
 import SectionProyect from "./components/SectionProyect";
 import SelectIdioma from "./components/SelectIdioma";
 export const Idioma = createContext();
 function App() {
-  const [stateIdioma,setStateIdioma] = useState("es")
+  const [stateIdioma, setStateIdioma] = useState("es");
   return (
-    <Idioma.Provider value={[stateIdioma,setStateIdioma]} >
+    <Idioma.Provider value={[stateIdioma, setStateIdioma]}>
       <div className="bg-gray-900 text-white min-h-screen pt-4">
         <section className="flex flex-col w-full gap-2 min-h-screen ">
           <div className="flex w-full flex-col justify-center items-center">
@@ -21,7 +21,9 @@ function App() {
           </div>
 
           <div className="flex flex-col w-full justify-center items-center">
-            <h3>Technologys</h3>
+            <h3>
+              {stateIdioma === "es" ? texto.es.textoTecno : texto.en.textoTecno}
+            </h3>
             <ListTech
               techs={[
                 "react",
@@ -34,7 +36,11 @@ function App() {
             />
           </div>
           <div className="w-full flex flex-col justify-center items-center gap-2">
-            <h3>Contact</h3>
+            <h3>
+              {stateIdioma === "es"
+                ? texto.es.textContacto
+                : texto.en.textContacto}
+            </h3>
             <div className="flex gap-4">
               <FaGithub />
               <FaLinkedin />
@@ -42,13 +48,14 @@ function App() {
             </div>
           </div>
           <div className="w-full flex flex-col justify-center items-center gap-2">
-            <h3>About Me</h3>
+            <h3>
+              {stateIdioma === "es"
+                ? texto.es.textSobreMi
+                : texto.en.textSobreMi}
+            </h3>
             <SelectIdioma />
             <p className="text-sm leading-relaxed max-w-2xl px-4 text-center">
-            {
-              stateIdioma === "es"?texto.es.sobremi:texto.en.sobremi
-            }
-              
+              {stateIdioma === "es" ? texto.es.sobremi : texto.en.sobremi}
             </p>
           </div>
           <div className="w-full flex flex-col justify-center items-center gap-2">

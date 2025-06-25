@@ -2,8 +2,8 @@
   {
     "title": "FM-tienda",
     "description": "E-commerce de productos de tecnología, con carrito de compras y pasarela de pago.",
-    "image": "/fm-tienda.PNG",
-    "arrayTechs": ["React", "Nodejs", "Express", "MongoDB","tailwind"],
+    "image": ["/fm-tienda.PNG"],
+    "arrayTechs": ["React", "Nodejs", "Express", "MongoDB", "tailwind"],
     "arrayPoints": [
       "Api-RESTful",
       "CRUD de Imagenes",
@@ -12,16 +12,20 @@
       "Manejo de errores",
       "Permisos de administrador"
     ],
-    "linkRepoBack":"",
-    "LinkRepoFront":"",
-    "linkPage":""
-
+    "linkRepoBack": "",
+    "LinkRepoFront": "",
+    "linkPage": ""
   },
   {
     "title": "Facu-turnos",
     "description": "Un sistema de gestión de turnos para una facultad, con autenticación y autorización de usuarios.",
-    "image": "/turnos.PNG",
-    "arrayTechs": ["React", "Nodejs", "Express", "MongoDB","tailwind"],
+    "image": [
+      "/facuturnos/Captura.PNG",
+      "/facuturnos/Captura2.PNG",
+      "/facuturnos/Captura3.PNG",
+      "/facuturnos/Captura.PNG"
+    ],
+    "arrayTechs": ["React", "Nodejs", "Express", "MongoDB", "tailwind"],
     "arrayPoints": [
       "Api-RESTful",
       "CRUD de usuarios",
@@ -29,40 +33,8 @@
       "Manejo de errores",
       "Permisos de administrador"
     ],
-     "linkRepoBack":"",
-    "LinkRepoFront":"",
-    "linkPage":""
-  },
-  {
-    "title": "Facu-turnos",
-    "description": "Un sistema de gestión de turnos para una facultad, con autenticación y autorización de usuarios.",
-    "image": "/turnos.PNG",
-    "arrayTechs": ["React", "Nodejs", "Express", "MongoDB","tailwind"],
-    "arrayPoints": [
-      "Api-RESTful",
-      "CRUD de usuarios",
-      "Autenticación JWT",
-      "Manejo de errores",
-      "Permisos de administrador"
-    ],
-     "linkRepoBack":"",
-    "LinkRepoFront":"",
-    "linkPage":""
-  },
-  {
-    "title": "Facu-turnos",
-    "description": "Un sistema de gestión de turnos para una facultad, con autenticación y autorización de usuarios.",
-    "image": "/turnos.PNG",
-    "arrayTechs": ["React", "Nodejs", "Express", "MongoDB","tailwind"],
-    "arrayPoints": [
-      "Api-RESTful",
-      "CRUD de usuarios",
-      "Autenticación JWT",
-      "Manejo de errores",
-      "Permisos de administrador"
-    ],
-     "linkRepoBack":"",
-    "LinkRepoFront":"",
-    "linkPage":""
+    "linkRepoBack": "https://github.com/devfacucoder/facutrunos/tree/main",
+    "LinkRepoFront": "https://github.com/devfacucoder/facuturnos-react",
+    "linkPage": ""
   }
 ]

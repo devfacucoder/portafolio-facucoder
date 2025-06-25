@@ -1,10 +1,16 @@
 {
   "es": {
     "sobremi": "Soy Facundo Ferreyra, desarrollador full stack con experiencia construyendo aplicaciones web usando React, Node.js, Express, MongoDB y GraphQL. Actualmente estudio programación web y trabajo en proyectos que integran sistemas, APIs y CRUDs personalizados. Busco seguir creciendo como profesional y como persona, aportando soluciones reales y aprendiendo en cada paso.",
-    "textSobreMi": "Sobre mi"
+    "textSobreMi": "Sobre mi",
+    "textContacto": "Contacto",
+    "textoTecno": "Tecnologias",
+    "misProyectos": "Mis Proyeectos"
   },
   "en": {
     "sobremi": "I'm Facundo Ferreyra, a full stack developer with experience building web applications using React, Node.js, Express, MongoDB, and GraphQL. I'm currently studying web development and working on projects that integrate systems, APIs, and custom CRUD operations. I'm looking to continue growing both professionally and personally, contributing real solutions and learning at every step.",
-    "textSobreMi": "About me"
+    "textSobreMi": "About me",
+    "textContacto": "Contact",
+    "textoTecno": "Tecnologys",
+    "misProyectos": "My Proyects"
   }
 }
