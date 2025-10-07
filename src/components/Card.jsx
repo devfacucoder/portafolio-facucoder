@@ -10,6 +10,7 @@ function Card({
   urlRepoBack = "#",
   urlRepoFront = "#",
   urlPagina = "#",
+  urlLinkRepo="#"
 }) {
   const [iterImg, setIterImg] = useState(0);
 
@@ -44,15 +45,16 @@ function Card({
           </div>
         )}
       </div>
-
-      <div className="w-full h-12 sm:hidden text-4xl flex justify-around">
-        <button aria-label="Anterior" onClick={() => toggleImgs("prev")}>
-          {"<"}
-        </button>
-        <button aria-label="Siguiente" onClick={() => toggleImgs("next")}>
-          {">"}
-        </button>
-      </div>
+      {img.length > 1 ? (
+        <div className="w-full h-12 sm:hidden text-4xl flex justify-around">
+          <button aria-label="Anterior" onClick={() => toggleImgs("prev")}>
+            {"<"}
+          </button>
+          <button aria-label="Siguiente" onClick={() => toggleImgs("next")}>
+            {">"}
+          </button>
+        </div>
+      ) : null}
 
       <div className="w-full px-2">
         <h3 className="text-2xl font-bold">{title}</h3>
@@ -65,24 +67,40 @@ function Card({
       </div>
 
       <div className="flex flex-wrap gap-2 mt-2">
-        <button
-          onClick={() => handleRedirect(urlRepoBack)}
-          className="bg-white text-black border-2 border-black p-2 btn-shadow hover:bg-gray-700 hover:text-white transition duration-300"
-        >
-          Backend-repo
-        </button>
-        <button
-          onClick={() => handleRedirect(urlRepoFront)}
-          className="bg-white text-black border-2 border-black p-2 btn-shadow hover:bg-gray-700 hover:text-white transition duration-300"
-        >
-          Frontend-repo
-        </button>
-        <button
-          onClick={() => handleRedirect(urlPagina)}
-          className="bg-white text-black border-2 border-black p-2 btn-shadow hover:bg-gray-700 hover:text-white transition duration-300"
-        >
-          Página
-        </button>
+        {urlRepoBack === "" ? null : (
+          <button
+            onClick={() => handleRedirect(urlRepoBack)}
+            className="bg-white text-black border-2 border-black p-2 btn-shadow hover:bg-gray-700 hover:text-white transition duration-300"
+          >
+            Backend-repo
+          </button>
+        )}
+        {urlRepoFront === "" ? null : (
+          <button
+            onClick={() => handleRedirect(urlRepoFront)}
+            className="bg-white text-black border-2 border-black p-2 btn-shadow hover:bg-gray-700 hover:text-white transition duration-300"
+          >
+            Frontend-repo
+          </button>
+        )}
+        {urlPagina === "" ? null : (
+          <button
+            onClick={() => handleRedirect(urlPagina)}
+            className="bg-white text-black border-2 border-black p-2 btn-shadow hover:bg-gray-700 hover:text-white transition duration-300"
+          >
+            Página
+          </button>
+        )}
+        {
+          urlLinkRepo ===""?null:(
+            <button
+            onClick={() => handleRedirect(urlLinkRepo)}
+            className="bg-white text-black border-2 border-black p-2 btn-shadow hover:bg-gray-700 hover:text-white transition duration-300"
+          >
+            Repositorio
+          </button>
+          )
+        }
       </div>
     </div>
   );

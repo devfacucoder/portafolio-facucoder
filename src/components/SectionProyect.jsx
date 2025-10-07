@@ -27,6 +27,7 @@ function SectionProyect() {
               urlRepoBack={proyect.linkRepoBack}
               urlRepoFront={proyect.LinkRepoFront}
               urlPagina={proyect.linkPage}
+              urlLinkRepo={proyect.LinkRepo}
             />
           </li>
         ))}
