@@ -1,22 +1,36 @@
 import React, { useState } from "react";
 
 function FormContact() {
-  //https://formspree.io/f/mldplqjw
   const [loading, setLoading] = useState(false);
   const [sent, setSent] = useState(false);
+  
   const [dataForContact, setDataForContact] = useState({
     nombre: "",
     email: "",
     mensaje: "",
   });
-  const handleDataForContact = (e) => {
+  const handleDataForContact = async (e) => {
     e.preventDefault();
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-      setSent(true);
-    }, 1000);
-    //
+    try {
+      setSent(false);
+
+      setLoading(true);
+      const response = await fetch("https://formspree.io/f/mldplqjw", {
+        method: "POST",
+        headers: {
+          "Content-type": "application/json",
+        },
+        body: JSON.stringify(dataForContact),
+      });
+      if (response.ok) {
+        const data = await response.json();
+        setLoading(false);
+        console.log(data);
+        setSent(true);
+      }
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (
@@ -51,7 +65,7 @@ function FormContact() {
                 email: e.target.value,
               }));
             }}
-            type="text"
+            type="email"
             id="inpEmail"
             className="bg-blue-950 h-[35px] p-2"
             placeholder="Ingrese un Email"
