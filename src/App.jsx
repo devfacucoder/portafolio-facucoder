@@ -7,6 +7,8 @@ import "./App.css";
 import ListTech from "./components/ListTech";
 import SectionProyect from "./components/SectionProyect";
 import SelectIdioma from "./components/SelectIdioma";
+import FormContact from "./components/FormContact";
+
 export const Idioma = createContext();
 function App() {
   const [stateIdioma, setStateIdioma] = useState("es");
@@ -67,9 +69,20 @@ function App() {
             >
               Ver Proyectos
             </button>
+             <button
+              onClick={() => {
+                window.location.href = "#contact";
+              }}
+              className="bg-white text-black cursor-pointer border-2 border-black p-2 btn-shadow hover:bg-gray-700 transition duration-300"
+            >
+              Contact
+            </button>
           </div>
         </section>
         <SectionProyect />
+        <section id="contact" className="flex flex-col w-full gap-2 min-h-screen  border-t-2 border-white">
+          <FormContact />
+        </section>
       </div>
     </Idioma.Provider>
   );

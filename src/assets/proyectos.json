@@ -72,7 +72,7 @@
     "title": "Arduino-morse-node",
     "description": "Un sistema de gestión de turnos para una facultad, con autenticación y autorización de usuarios.",
     "image": ["/arduino-morse-inteface.png", "/arduino-morse.png"],
-    "arrayTechs": ["React", "Nodejs", "Express", "MongoDB", "tailwind"],
+    "arrayTechs": ["React", "Nodejs", "Express", "tailwind"],
     "arrayPoints": ["Api-Res", "Arduino IDE", "Reactjs", "Nodejs", "tailwind"],
     "linkRepoBack": "",
     "LinkRepoFront": "",

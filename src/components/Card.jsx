@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ListTech from "./ListTech";
-
+import { FaGithub } from "react-icons/fa";
 function Card({
   arrayTech,
   title = "titulo",
@@ -95,8 +95,9 @@ function Card({
           urlLinkRepo ===""?null:(
             <button
             onClick={() => handleRedirect(urlLinkRepo)}
-            className="bg-white text-black border-2 border-black p-2 btn-shadow hover:bg-gray-700 hover:text-white transition duration-300"
+            className="bg-white flex items-center gap-2 text-black border-2 border-black p-2 btn-shadow hover:bg-gray-700 hover:text-white transition duration-300"
           >
+            <FaGithub fontSize={"25px"}/>
             Repositorio
           </button>
           )
