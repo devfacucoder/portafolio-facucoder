@@ -44,9 +44,21 @@ function App() {
                 : texto.en.textContacto}
             </h3>
             <div className="flex gap-4">
-              <FaGithub />
-              <FaLinkedin />
-              <CiInstagram />
+              <a href="https://github.com/devfacucoder" target="_blank">
+                <FaGithub />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/facundo-ferreyra-47910523b/"
+                target="_blank"
+              >
+                <FaLinkedin />
+              </a>
+              <a
+                href="https://www.instagram.com/facuferreyrafm?igsh=MW1vM3EyMzNkNnF0aQ=="
+                target="_blank"
+              >
+                <CiInstagram />
+              </a>
             </div>
           </div>
           <div className="w-full flex flex-col justify-center items-center gap-2">
@@ -69,7 +81,7 @@ function App() {
             >
               Ver Proyectos
             </button>
-             <button
+            <button
               onClick={() => {
                 window.location.href = "#contact";
               }}
@@ -80,7 +92,10 @@ function App() {
           </div>
         </section>
         <SectionProyect />
-        <section id="contact" className="flex flex-col w-full gap-2 min-h-screen  border-t-2 border-white">
+        <section
+          id="contact"
+          className="flex flex-col w-full gap-2 min-h-screen  border-t-2 border-white"
+        >
           <FormContact />
         </section>
       </div>

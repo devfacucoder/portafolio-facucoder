@@ -78,5 +78,16 @@
     "LinkRepoFront": "",
     "linkPage": "",
     "LinkRepo":"https://github.com/devfacucoder/nodejs-arduino-morse"
+  },
+    {
+    "title": "Norbis Medical",
+    "description": "lading page para empresa de salud",
+    "image": ["/norbis1.png", "/norbis2.png","norbis3.png"],
+    "arrayTechs": ["React", "tailwind"],
+    "arrayPoints": [ "Reactjs", "tailwind"],
+    "linkRepoBack": "",
+    "LinkRepoFront": "",
+    "linkPage": "https://norbis.netlify.app/",
+    "LinkRepo":"https://github.com/devfacucoder/Norbis-medical"
   }
 ]
