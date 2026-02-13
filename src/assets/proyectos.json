@@ -70,7 +70,7 @@
   },
   {
     "title": "Arduino-morse-node",
-    "description": "Un sistema de gestión de turnos para una facultad, con autenticación y autorización de usuarios.",
+    "description": "Un sistema para enviar mensajes para que un arduino lo muestre en morse",
     "image": ["/arduino-morse-inteface.png", "/arduino-morse.png"],
     "arrayTechs": ["React", "Nodejs", "Express", "tailwind"],
     "arrayPoints": ["Api-Res", "Arduino IDE", "Reactjs", "Nodejs", "tailwind"],
@@ -83,6 +83,17 @@
     "title": "Norbis Medical",
     "description": "lading page para empresa de salud",
     "image": ["/norbis1.png", "/norbis2.png","norbis3.png"],
+    "arrayTechs": ["React", "tailwind"],
+    "arrayPoints": [ "Reactjs", "tailwind"],
+    "linkRepoBack": "",
+    "LinkRepoFront": "",
+    "linkPage": "https://norbis.netlify.app/",
+    "LinkRepo":"https://github.com/devfacucoder/Norbis-medical"
+  },
+    {
+    "title": "Carteros Auto",
+    "description": "Sistema Desktop para enviar varios email y con pdf",
+    "image": ["carterosauto/carteros1.png","carterosauto/carteros2.png","carterosauto/carteros3.png","carterosauto/carteros4.png"],
     "arrayTechs": ["React", "tailwind"],
     "arrayPoints": [ "Reactjs", "tailwind"],
     "linkRepoBack": "",
